@@ -4481,6 +4481,7 @@ RendererSceneCull::~RendererSceneCull() {
 
 	if (dummy_occlusion_culling) {
 		memdelete(dummy_occlusion_culling);
+		dummy_occlusion_culling = nullptr;
 	}
 
 	if (light_culler) {
