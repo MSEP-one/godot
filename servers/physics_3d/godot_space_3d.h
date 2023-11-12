@@ -101,7 +101,7 @@ private:
 	real_t contact_bias = 0.0;
 
 	enum {
-		INTERSECTION_QUERY_MAX = 2048
+		INTERSECTION_QUERY_MAX = 500000
 	};
 
 	GodotCollisionObject3D *intersection_query_results[INTERSECTION_QUERY_MAX];
