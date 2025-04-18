@@ -436,7 +436,7 @@ void CanvasItem::_window_visibility_changed() {
 
 void CanvasItem::queue_redraw() {
 	ERR_THREAD_GUARD; // Calling from thread is safe.
-	if (!is_inside_tree()) {
+	if (!is_inside_tree() || !is_visible_in_tree()) {
 		return;
 	}
 	if (pending_update) {
